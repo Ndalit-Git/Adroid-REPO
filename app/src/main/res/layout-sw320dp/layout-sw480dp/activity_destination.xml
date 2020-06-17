@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".destination">
+    <ImageButton
+        android:id="@+id/view2"
+        android:layout_width="412dp"
+        android:layout_height="90dp"
+        android:background="@drawable/image_2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/view6"
+        android:layout_width="414dp"
+        android:layout_height="35dp"
+        android:background="@drawable/bottom"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="60dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="4dp"
+        android:background="@drawable/bg_bt_back"
+        android:drawableStart="@drawable/ic_arrow_back_black_24dp"
+        android:fontFamily="sans-serif-condensed"
+        android:onClick="back"
+        android:text="Back"
+        android:textAlignment="textStart"
+        android:textAllCaps="false"
+        android:textColor="#fff"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.045"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view2" />
+
+    <TextView
+        android:id="@+id/textView13"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:fontFamily="sans-serif-black"
+        android:text="Yogyakarta Tourist Place"
+        android:textAlignment="center"
+        android:textColor="#000"
+        android:textSize="25sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button3" />
+
+    <View
+        android:id="@+id/view7"
+        android:onClick="taman_sari"
+        android:layout_width="170dp"
+        android:layout_height="140dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/intersection_1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView13" />
+
+    <TextView
+        android:id="@+id/textView15"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="75dp"
+        android:fontFamily="sans-serif-black"
+        android:text="Taman Sari"
+        android:textAlignment="center"
+        android:textColor="#000"
+        android:textSize="15sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view7" />
+
+    <ImageButton
+        android:id="@+id/view8"
+        android:onClick="merapi"
+        android:layout_width="170dp"
+        android:layout_height="140dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/intersection_2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.468"
+        app:layout_constraintStart_toEndOf="@+id/view7"
+        app:layout_constraintTop_toBottomOf="@+id/textView13" />
+
+    <TextView
+        android:id="@+id/textView16"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="93dp"
+        android:fontFamily="sans-serif-black"
+        android:text="Merapi Mountain"
+        android:textAlignment="center"
+        android:textColor="#000"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/textView15"
+        app:layout_constraintTop_toBottomOf="@+id/view8" />
+
+    <ImageButton
+        android:id="@+id/view9"
+        android:onClick="prambanan"
+        android:layout_width="170dp"
+        android:layout_height="140dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/intersection_3"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView15" />
+
+
+    <TextView
+        android:id="@+id/textView17"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="75dp"
+        android:fontFamily="sans-serif-black"
+        android:text="Prambanan"
+        android:textAlignment="center"
+        android:textColor="#000"
+        android:textSize="15sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view9" />
+
+    <ImageButton
+        android:id="@+id/view10"
+        android:onClick="ratu_bokoh"
+        android:layout_width="170dp"
+        android:layout_height="140dp"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/intersection_4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.468"
+        app:layout_constraintStart_toEndOf="@+id/view9"
+        app:layout_constraintTop_toBottomOf="@+id/textView16" />
+
+    <TextView
+        android:id="@+id/textView18"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="110dp"
+        android:fontFamily="sans-serif-black"
+        android:text="Ratu Bokoh"
+        android:textAlignment="center"
+        android:textColor="#000"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.014"
+        app:layout_constraintStart_toEndOf="@+id/textView17"
+        app:layout_constraintTop_toBottomOf="@+id/view10" />
+
+    <ImageButton
+        android:id="@+id/view11"
+        android:onClick="indrayanti"
+        android:layout_width="170dp"
+        android:layout_height="140dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/intersection_5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView17" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-black"
+        android:text="Kalibiru"
+        android:textAlignment="center"
+        android:textColor="#000"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toTopOf="@+id/view6"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.64"
+        app:layout_constraintStart_toEndOf="@+id/textView19"
+        app:layout_constraintTop_toBottomOf="@+id/view12"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ImageButton
+        android:id="@+id/view12"
+        android:onClick="kalibiru"
+        android:layout_width="170dp"
+        android:layout_height="140dp"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/intersection_6"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/view11"
+        app:layout_constraintTop_toBottomOf="@+id/textView18" />
+
+    <TextView
+        android:id="@+id/textView19"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="75dp"
+        android:fontFamily="sans-serif-black"
+        android:text="Indrayanti"
+        android:textAlignment="center"
+        android:textColor="#000"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toTopOf="@+id/view6"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view11"
+        app:layout_constraintVertical_bias="0.0" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

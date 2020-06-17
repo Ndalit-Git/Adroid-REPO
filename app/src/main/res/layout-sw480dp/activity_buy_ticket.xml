@@ -1,0 +1,317 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".buy_ticket">
+    <View
+        android:id="@+id/view2"
+        android:layout_width="match_parent"
+        android:layout_height="110dp"
+        android:background="@drawable/image_2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/view6"
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:background="@drawable/bottom"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="60dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/bg_bt_back"
+        android:drawableStart="@drawable/ic_arrow_back_black_24dp"
+        android:fontFamily="sans-serif-condensed"
+        android:onClick="back"
+        android:text="Back"
+        android:textAlignment="textStart"
+        android:textAllCaps="false"
+        android:textColor="#fff"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.049"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view2" />
+
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-black"
+        android:text="Choose The Route"
+        android:textColor="#000"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button3" />
+
+    <View
+        android:id="@+id/view13"
+        android:layout_width="360dp"
+        android:layout_height="200dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/bg_layer_buytick"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.489"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView9" />
+
+    <TextView
+        android:id="@+id/textView20"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="From"
+        android:textColor="#000"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/view13"
+        app:layout_constraintHorizontal_bias="0.111"
+        app:layout_constraintStart_toStartOf="@+id/view13"
+        app:layout_constraintTop_toTopOf="@+id/view13" />
+
+    <View
+        android:id="@+id/view14"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="4dp"
+        android:background="@drawable/buildings"
+        app:layout_constraintBottom_toTopOf="@+id/view17"
+        app:layout_constraintStart_toStartOf="@+id/view13"
+        app:layout_constraintTop_toBottomOf="@+id/textView20"
+        app:layout_constraintVertical_bias="0.111" />
+
+    <Spinner
+        android:id="@+id/spinner_from"
+        android:layout_width="250dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="4dp"
+        android:entries="@array/Place_List"
+        android:spinnerMode="dialog"
+        app:layout_constraintBottom_toTopOf="@+id/view17"
+        app:layout_constraintEnd_toEndOf="@+id/view13"
+        app:layout_constraintHorizontal_bias="0.3"
+        app:layout_constraintStart_toEndOf="@+id/view14"
+        app:layout_constraintTop_toBottomOf="@+id/textView20"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <View
+        android:id="@+id/view17"
+        android:layout_width="320dp"
+        android:layout_height="2dp"
+        android:background="@drawable/line1"
+        app:layout_constraintBottom_toBottomOf="@+id/view13"
+        app:layout_constraintEnd_toEndOf="@+id/view13"
+        app:layout_constraintStart_toStartOf="@+id/view13"
+        app:layout_constraintTop_toTopOf="@+id/view13" />
+
+    <TextView
+        android:id="@+id/textView22"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="To"
+        android:textColor="#000"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/view13"
+        app:layout_constraintHorizontal_bias="0.103"
+        app:layout_constraintStart_toStartOf="@+id/view13"
+        app:layout_constraintTop_toBottomOf="@+id/view17" />
+
+    <View
+        android:id="@+id/view19"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="4dp"
+        android:background="@drawable/buildings"
+        app:layout_constraintBottom_toBottomOf="@+id/view13"
+        app:layout_constraintStart_toStartOf="@+id/view13"
+        app:layout_constraintTop_toBottomOf="@+id/textView22"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Spinner
+        android:id="@+id/spinner_to"
+        android:layout_width="250dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="4dp"
+        android:entries="@array/Place_List"
+        android:spinnerMode="dialog"
+        app:layout_constraintBottom_toBottomOf="@+id/view13"
+        app:layout_constraintEnd_toEndOf="@+id/view13"
+        app:layout_constraintHorizontal_bias="0.045"
+        app:layout_constraintStart_toEndOf="@+id/view19"
+        app:layout_constraintTop_toBottomOf="@+id/textView22"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <View
+        android:id="@+id/view20"
+        android:layout_width="170dp"
+        android:layout_height="86dp"
+        android:layout_marginStart="56dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/bg_layer_buytick"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view13" />
+
+    <TextView
+        android:id="@+id/textView21"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Passangers"
+        android:textColor="#000"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/view20"
+        app:layout_constraintHorizontal_bias="0.228"
+        app:layout_constraintStart_toStartOf="@+id/view20"
+        app:layout_constraintTop_toTopOf="@+id/view20" />
+
+    <Spinner
+        android:id="@+id/spinner_passenger"
+        android:layout_width="75dp"
+        android:layout_height="30dp"
+        android:entries="@array/Passangers"
+        android:spinnerMode="dialog"
+        app:layout_constraintBottom_toBottomOf="@+id/view20"
+        app:layout_constraintEnd_toEndOf="@+id/view20"
+        app:layout_constraintHorizontal_bias="0.121"
+        app:layout_constraintStart_toEndOf="@+id/view16"
+        app:layout_constraintTop_toBottomOf="@+id/textView21"
+        app:layout_constraintVertical_bias="0.48" />
+
+    <View
+        android:id="@+id/view16"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="20dp"
+        android:background="@drawable/users"
+        app:layout_constraintBottom_toBottomOf="@+id/view20"
+        app:layout_constraintStart_toStartOf="@+id/view20"
+        app:layout_constraintTop_toBottomOf="@+id/textView21"
+        app:layout_constraintVertical_bias="0.464" />
+
+    <View
+        android:id="@+id/view15"
+        android:layout_width="170dp"
+        android:layout_height="86dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/bg_layer_buytick"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.297"
+        app:layout_constraintStart_toEndOf="@+id/view20"
+        app:layout_constraintTop_toBottomOf="@+id/view13" />
+
+    <TextView
+        android:id="@+id/textView24"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Seat Class"
+        android:textColor="#000"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/view15"
+        app:layout_constraintHorizontal_bias="0.181"
+        app:layout_constraintStart_toStartOf="@+id/view15"
+        app:layout_constraintTop_toTopOf="@+id/view15" />
+
+    <View
+        android:id="@+id/view18"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="16dp"
+        android:background="@drawable/seat"
+        app:layout_constraintBottom_toBottomOf="@+id/view15"
+        app:layout_constraintStart_toStartOf="@+id/view15"
+        app:layout_constraintTop_toBottomOf="@+id/textView24"
+        app:layout_constraintVertical_bias="0.464" />
+
+    <Spinner
+        android:id="@+id/spinner_seat"
+        android:layout_width="110dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="12dp"
+        android:entries="@array/Seat_Class"
+        android:spinnerMode="dialog"
+        app:layout_constraintBottom_toBottomOf="@+id/view15"
+        app:layout_constraintEnd_toEndOf="@+id/view15"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/view18"
+        app:layout_constraintTop_toBottomOf="@+id/textView24"
+        app:layout_constraintVertical_bias="0.062" />
+
+    <View
+        android:id="@+id/view21"
+        android:layout_width="360dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/bg_layer_buytick"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.509"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view15" />
+
+    <View
+        android:id="@+id/view23"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="16dp"
+        android:background="@drawable/calendar"
+        app:layout_constraintBottom_toBottomOf="@+id/view21"
+        app:layout_constraintStart_toStartOf="@+id/view21"
+        app:layout_constraintTop_toTopOf="@+id/view21" />
+
+    <TextView
+        android:id="@+id/textView25"
+        android:layout_width="240dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="4dp"
+        android:hint="Departure Date"
+        android:textAlignment="center"
+        android:textSize="35sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/view21"
+        app:layout_constraintStart_toEndOf="@+id/view23"
+        app:layout_constraintTop_toTopOf="@+id/view21" />
+
+    <Button
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:background="@drawable/addvec"
+        android:onClick="add_date"
+        app:layout_constraintBottom_toBottomOf="@+id/view21"
+        app:layout_constraintEnd_toEndOf="@+id/view21"
+        app:layout_constraintStart_toEndOf="@+id/textView25"
+        app:layout_constraintTop_toTopOf="@+id/view21" />
+
+    <Button
+        android:layout_width="300dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="20dp"
+        android:text="BOOKING TICKET"
+        android:onClick="gobooking"
+        android:textStyle="bold"
+        android:textColor="#fff"
+        android:background="@drawable/bg_layer"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view21" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

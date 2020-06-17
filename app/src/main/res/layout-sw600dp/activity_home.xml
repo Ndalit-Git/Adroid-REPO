@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".home">
+
+    <View
+        android:id="@+id/view2"
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
+        android:background="@drawable/image_2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/view6"
+        android:layout_width="match_parent"
+        android:layout_height="115dp"
+        android:background="@drawable/bottom"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:fontFamily="sans-serif-black"
+        android:text="HOME"
+        android:textColor="#000"
+        android:textSize="40sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view2" />
+
+    <ImageButton
+        android:id="@+id/bt_booking"
+        android:layout_width="160dp"
+        android:layout_height="195dp"
+        android:layout_marginStart="105dp"
+        android:layout_marginTop="20dp"
+        android:onClick="bt_buy"
+        android:background="@drawable/bg_layer_pink"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView9" />
+
+    <View
+        android:layout_width="120dp"
+        android:layout_height="135dp"
+        android:background="@drawable/bus"
+        app:layout_constraintBottom_toBottomOf="@+id/bt_booking"
+        app:layout_constraintEnd_toEndOf="@+id/bt_booking"
+        app:layout_constraintStart_toStartOf="@+id/bt_booking"
+        app:layout_constraintTop_toTopOf="@+id/bt_booking" />
+
+    <ImageButton
+        android:id="@+id/bt_destination"
+        android:layout_width="160dp"
+        android:layout_height="195dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="20dp"
+        android:onClick="bt_destination"
+        android:background="@drawable/bg_layer_pink"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.238"
+        app:layout_constraintStart_toEndOf="@+id/bt_booking"
+        app:layout_constraintTop_toBottomOf="@+id/textView9" />
+
+    <View
+        android:id="@+id/view4"
+        android:layout_width="120dp"
+        android:layout_height="135dp"
+        android:background="@drawable/destination"
+        app:layout_constraintBottom_toBottomOf="@+id/bt_destination"
+        app:layout_constraintEnd_toEndOf="@+id/bt_destination"
+        app:layout_constraintStart_toStartOf="@+id/bt_destination"
+        app:layout_constraintTop_toTopOf="@+id/bt_destination" />
+
+    <ImageButton
+        android:id="@+id/bt_mybooking"
+        android:layout_width="160dp"
+        android:layout_height="195dp"
+        android:layout_marginStart="105dp"
+        android:layout_marginTop="40dp"
+        android:onClick="bt_myticket"
+        android:background="@drawable/bg_layer_pink"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView11" />
+
+    <View
+        android:layout_width="120dp"
+        android:layout_height="135dp"
+        android:background="@drawable/bill"
+        app:layout_constraintBottom_toBottomOf="@+id/bt_mybooking"
+        app:layout_constraintEnd_toEndOf="@+id/bt_mybooking"
+        app:layout_constraintStart_toStartOf="@+id/bt_mybooking"
+        app:layout_constraintTop_toTopOf="@+id/bt_mybooking" />
+
+    <ImageButton
+        android:id="@+id/bt_account"
+        android:layout_width="160dp"
+        android:layout_height="195dp"
+        android:layout_marginTop="40dp"
+        android:onClick="bt_account"
+        android:background="@drawable/bg_layer_pink"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.379"
+        app:layout_constraintStart_toEndOf="@+id/bt_mybooking"
+        app:layout_constraintTop_toBottomOf="@+id/textView12" />
+
+    <View
+        android:layout_width="120dp"
+        android:layout_height="135dp"
+        android:background="@drawable/avatar"
+        app:layout_constraintBottom_toBottomOf="@+id/bt_account"
+        app:layout_constraintEnd_toEndOf="@+id/bt_account"
+        app:layout_constraintStart_toStartOf="@+id/bt_account"
+        app:layout_constraintTop_toTopOf="@+id/bt_account" />
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="132dp"
+        android:fontFamily="sans-serif-black"
+        android:text="BUY TICKET"
+        android:textColor="#000"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bt_booking" />
+
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-black"
+        android:text="DESTINATION"
+        android:textColor="#000"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.414"
+        app:layout_constraintStart_toEndOf="@+id/textView11"
+        app:layout_constraintTop_toBottomOf="@+id/bt_destination" />
+
+    <TextView
+        android:id="@+id/textView14"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="132dp"
+        android:fontFamily="sans-serif-black"
+        android:text="MY TICKET"
+        android:textColor="#000"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/view6"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bt_mybooking"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="68dp"
+        android:layout_marginBottom="16dp"
+        android:fontFamily="sans-serif-black"
+        android:text="ACCOUNT"
+        android:textColor="#000"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/view6"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.276"
+        app:layout_constraintStart_toEndOf="@+id/textView14"
+        app:layout_constraintTop_toBottomOf="@+id/bt_account"
+        app:layout_constraintVertical_bias="0.0" />
+</androidx.constraintlayout.widget.ConstraintLayout>

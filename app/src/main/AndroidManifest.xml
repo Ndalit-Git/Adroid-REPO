@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.cakrawalatravelpartner">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="My Bus"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+        <activity android:name=".cardview_bookinglist"></activity>
+        <activity android:name=".change_password" />
+        <activity android:name=".my_booking_list" />
+        <activity android:name=".my_account" />
+        <activity android:name=".pay_ticket" />
+        <activity android:name=".buy_ticket" />
+        <activity android:name=".destination" />
+        <activity android:name=".home" />
+        <activity android:name=".appinfo" />
+        <activity android:name=".singuppage" />
+        <activity android:name=".signinpage" />
+        <activity android:name=".gestarted" />
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

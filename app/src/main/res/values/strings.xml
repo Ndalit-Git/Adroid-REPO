@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">Cakrawala Travel Partner</string>
+    <string name="signin">SIGN IN</string>
+    <string name="signup">SIGN UP</string>
+    <string-array name="Place_List">
+        <item>Indrayanti</item>
+        <item>Kalibiru</item>
+        <item>Merapi</item>
+        <item>Prambanan</item>
+        <item>Ratu Bokoh</item>
+        <item>Taman Sari</item>
+    </string-array>
+    <string-array name="Passangers">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+    </string-array>
+    <string-array name="Seat_Class">
+        <item>Economy - (IDR) 75,000</item>
+        <item>Business - (IDR) 100,000</item>
+        <item>First - (IDR) 120,000</item>
+    </string-array>
+</resources>
